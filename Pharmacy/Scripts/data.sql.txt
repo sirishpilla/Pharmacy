@@ -1,0 +1,61 @@
+SET foreign_key_checks = 0;
+TRUNCATE Prescription;
+TRUNCATE Sell;
+TRUNCATE DOCTOR;
+TRUNCATE Contract;
+TRUNCATE Pharm_co;
+TRUNCATE Pri_Phy_patient;
+TRUNCATE Pharmacy;
+TRUNCATE Make_Drug;
+
+
+
+
+INSERT INTO DOCTOR VALUES ("110-211-211","John","Cardiac",20);
+INSERT INTO DOCTOR VALUES ("110-211-212","Bob","Ortho",10);
+INSERT INTO DOCTOR VALUES ("110-211-213","Luke","Neuro",25);
+INSERT INTO DOCTOR VALUES ("110-211-214","Ben","Cardiac",5);
+INSERT INTO DOCTOR VALUES ("110-211-215","Jade","Pediatrics",15);
+
+INSERT INTO Pharmacy VALUES ("110-211","Quatros","West College",92929292);
+INSERT INTO Pharmacy VALUES ("110-212","Feddys","East College",92929298);
+INSERT INTO Pharmacy VALUES ("110-213","MCD","CHandlers ST",92929222);
+INSERT INTO Pharmacy VALUES ("110-214","King","lot College",92929492);
+INSERT INTO Pharmacy VALUES ("110-215","Arbys","Yards College",92829292);
+
+INSERT INTO Pharm_co VALUES ("Robs",92929292);
+INSERT INTO Pharm_co VALUES ("Klebs",92929256);
+INSERT INTO Pharm_co VALUES ("Rands",92929342);
+INSERT INTO Pharm_co VALUES ("Kates",92929782);
+INSERT INTO Pharm_co VALUES ("Chobs",92998292);
+
+INSERT INTO Pri_Phy_patient VALUES("210-110-987","Sran",'1998-3-13',"West Nort","110-211-214");
+INSERT INTO Pri_Phy_patient VALUES("210-109-987","Shake",'1995-3-23',"West port","110-211-215");
+INSERT INTO Pri_Phy_patient VALUES("210-110-787","Srik",'1998-3-10',"East Nort","110-211-213");
+INSERT INTO Pri_Phy_patient VALUES("210-110-887","Ban",'1998-03-13',"West Nort","110-211-211");
+INSERT INTO Pri_Phy_patient VALUES("210-110-997","Yan",'1995-04-13',"Poan Nort","110-211-212");
+
+
+INSERT INTO Prescription VALUES(1234567890,"ready",'2008-01-01 00:00:01','2008-01-01 00:00:01',"110-211-215","210-110-987",'2020-10-11',1,"Euphrogen","Robs");
+INSERT INTO Prescription VALUES(1234567891,"ready",'2008-01-01 00:00:02','2008-01-01 00:00:02',"110-211-214","210-110-987",'2020-10-12',2,"lomrogen","Klebs");
+
+
+INSERT INTO Make_Drug VALUES("Euphrogen","robs","Nyquil");
+INSERT INTO Make_Drug VALUES("lomrogen","Klebs","Dayquil");
+
+
+INSERT INTO Sell VALUES(20,"110-211","Euphrogen","robs");
+INSERT INTO Sell VALUES(20,"110-212","lomrogen","klebs");
+
+
+INSERT INTO Contract VALUES("110-211",'2018-02-27','2019-03-28',"This is great","Sirish","robs");
+INSERT INTO Contract VALUES("110-212",'2018-02-17','2019-03-18',"This is not great","Shen","klebs");
+
+
+
+
+
+
+
+
+
