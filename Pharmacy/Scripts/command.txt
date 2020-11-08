@@ -1,0 +1,1 @@
+mysql -u root -p Pharmacy < C:\Users\siris\Documents\workspace-spring-tool-suite-4-4.8.0.RELEASE\Pharmacy\Scripts\data.sql.txt 
